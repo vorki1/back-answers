@@ -14,7 +14,7 @@ import { QuestionModule } from './question/question.module';
       useFactory: (configService: ConfigService) => ({
         uri: configService.get<string>('MONGO_URI'),
         dbName: configService.get<string>('MONGO_DATABASE'), 
-      }),
+      }), 
     }),
     QuestionModule,
   ],
